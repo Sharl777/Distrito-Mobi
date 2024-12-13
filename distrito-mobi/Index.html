@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito Mobi</title>
+    <link rel="stylesheet" href="css/Index.css">
+    <!-- logo do site na barra da guia ou barra url -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/bus.ico.png">
+</head>
+
+<body>
+
+    <!-- logo e imagem do topo da pagina -->
+    <div class="header">
+        <h1 class="nomesite"> Distrito Mobi</h1>
+        <img src="img/logo.png" alt="logo a direita">
+    </div>
+
+    <!-- Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="horario.html">Horários</a></li>
+            <li><a href="guia.html">Guia da Cidade</a></li>
+            <li><a href="noticia.html">Notícias</a></li>
+            <li><a href="denuncia.html">Denúncias</a></li>
+            <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página de informações sobre o site -->
+            <li><a href="contato.html">Contato</a></li>
+           
+        </ul>
+
+        <!-- Div principal que encapsula o carrossel e os botões de navegação -->
+        <div class="container">
+            <div class="carrosel">
+                <!-- Imagens que serão exibidas no carrossel, com a primeira imagem marcada como 'active' -->
+                <img src="img/bus.jpeg" alt="Imagem 1" class="active">
+                <img src="img/bus2.jpg" alt="Imagem 2">
+                <img src="img/bus3.jpg" alt="Imagem 3">
+                <img src="img/bus4.jpg" alt="Imagem 4">
+            </div>
+            <!-- Botão para navegar para a imagem anterior -->
+            <button class="arrow prev">&#8249;</button>
+            <!-- Botão para navegar para a próxima imagem -->
+            <button class="arrow next">&#8250;</button>
+        </div>
+        <!-- Script que controlará o funcionamento do carrossel de imagens -->
+        <script src="carrosel.js"></script>
+
+        <!-- Bloco de informações -->
+    </nav>
+
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+ 
+
+
+        <div class="container_clima">
+            <!-- Coluna com 3 noticias na horizontal -->
+            <div class="coluna_horizontal">
+                <div class="noticia_index">
+                    <article>
+                        <h2> Ônibus sem dinheiro – A nova realidade</h2>
+                        <p> Os ônibus já não aceitam mais dinheiro como forma de pagamento, trazendo uma nova era
+                            para o transporte público. A mudança foi implementada para garantir mais segurança,
+                            agilidade e modernidade no embarque. Agora, os passageiros devem usar cartões de crédito,
+                            débito ou cartões de mobilidade.</p>
+                    </article>
+                </div>
+        
+                <div class="noticia_index">
+                    <article>
+                        <h2> Benefícios do transporte sem dinheiro</h2>
+                        <p>Com a implementação do sistema sem dinheiro, o transporte público se tornou mais moderno
+                            e eficiente. Essa mudança não só traz segurança para motoristas e passageiros, mas também
+                            promove uma experiência de viagem mais rápida e conveniente. À medida que essas inovações se tornam
+                            padrão, os usuários experimentam um sistema de
+                            transporte público que não só acompanha as necessidades modernas, mas também se adapta às
+                            tendências de mobilidade urbana. O futuro do transporte é digital, seguro e integrado!</p>
+                    </article>
+                </div>
+        
+                <div class="noticia_index">
+                    <article>
+                        <h2>O futuro da mobilidade urbana</h2>
+                        <p> Cidades ao redor do mundo estão investindo em soluções que melhoram a conectividade entre
+                            diferentes modos de transporte. O objetivo é oferecer uma experiência integrada, onde os
+                            usuários podem planejar e pagar suas viagens de maneira simples, utilizando apenas um dispositivo.</p>
+                    </article>
+                </div>
+            </div>
+    
+
+
+            <!-- Coluna vertical com a previsão do clima -->
+            <div class="clima_vertical">
+                 <h2>Clima</h2>
+                <!-- Código do Climatempo gerado do site -->
+                <div 
+                    id="ww_6076127775e01" 
+                    v='1.3' 
+                    loc='id' 
+                    a='{"t":"responsive","lang":"pt","sl_lpl":1,"ids":["wl4843"],"font":"Arial","sl_ics":"one_a",
+                        "sl_sot":"celsius","cl_bkg":"#00796B","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#FFFFFF",
+                        "cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"7","cl_odd":"#0000000a"
+                    }'>Fonte de dados meteorológicos: 
+
+                <a 
+                    href="https://wetterlang.de" 
+                    id="ww_6076127775e01_u" 
+                    target="_blank"
+                    >Wetter 30 tage
+                </a>   
+
+                </div>
+                <script async src="https://app3.weatherwidget.org/js/?id=ww_6076127775e01">
+                </script>
+                  <!--<iframe src="URL_DO_SELO" width="160" height="200" frameborder="0"></iframe>-->
+            </div>
+        </div>
+
+
+
+
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Seção do rodapé com informações sobre a empresa -->
+            
+            <!-- Seção do rodapé com links úteis para navegação -->
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <!-- Seção do rodapé com informações de contato -->
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@distritomobi.com</p>
+                <p>Telefone: (61) 98997-5277</p>
+                <p>Endereço: Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+        </div>
+        <!-- Parte inferior do rodapé com direitos autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Distrito Mobi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>

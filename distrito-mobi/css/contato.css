@@ -1,0 +1,106 @@
+/*Formulario */
+
+.formulario {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 1350px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Fundo branco */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+fieldset {
+  border: 1px solid #ddd; /* Borda sutil ao redor do formulário */
+  border-radius: 10px; /* Bordas arredondadas do fieldset */
+  padding: 20px;
+}
+
+legend {
+  font-size: 1.5em;
+  color: #444;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+.msg {
+  width: 100%; /* Largura total dos campos de entrada */
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Bordas arredondadas dos campos */
+  box-sizing: border-box;
+  font-size: 1em;
+  color: #666;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa; /* Cor do placeholder */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.msg:focus {
+  outline: none;
+  border-color: #605951;  /*Cor da borda ao focar */
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.2); /* Sombra ao focar */
+}
+
+textarea.msg {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.button_submit {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  color: #fff; /* Cor do texto */
+  background-color: #61a6ab; /* Cor de fundo do botão */
+  border: none;
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button_submit:hover {
+  background-color: #605951; /* Cor de fundo ao passar o mouse */
+}
+
+.contato_info {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444;
+  flex: 1 1 calc(33.333% - 20px);
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 1350px;
+}
+.ouvi{
+  text-align: center;
+  color: #231453;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 1350px;
+  margin: 20px auto;
+  padding: 20px;
+
+}

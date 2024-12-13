@@ -1,0 +1,185 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="PT-BR"> <!-- Início do documento HTML com a linguagem definida como português brasileiro -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, permitindo o uso de caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura o layout responsivo para adaptar-se a diferentes dispositivos -->
+    <title>Distrito Mobi</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/Index.css"> <!-- Link para o arquivo de estilo Index.css -->
+    <link rel="stylesheet" href="css/servico.css"> <!-- Link para o arquivo de estilo servico.css -->
+    <!-- logo do site na barra da guia ou barra url -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/bus.ico.png">
+</head>
+
+<body>
+
+    <!-- Logo e imagem do topo da página -->
+    <div class="header"> <!-- Divisão para o cabeçalho com o nome e logo do site -->
+        <h1 class="nomesite"> Distrito Mobi</h1> <!-- Título principal da página, indicando o nome do site -->
+        <img src="img/logo.png" alt="logo a direita"> <!-- Imagem da logo posicionada no cabeçalho -->
+    </div>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul class="menu"> <!-- Lista não ordenada para o menu de navegação -->
+            <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+            
+            <li><a href="horario.html">Horários</a></li><!-- Link para a página de serviços oferecidos -->
+            <li><a href="guia.html">Guia da Cidade</a></li> <!-- Link para a página de guia da cidade -->
+            <li><a href="noticia.html">Notícias</a></li> <!-- Link para a página de notícias -->
+            <li><a href="denuncia.html">Denúncias</a></li> <!-- Link para a página de denúncias -->
+            <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página de informações sobre o site -->
+            <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+            
+        </ul>
+    </nav>
+
+
+    <div class="containergoogle"><!--TESTE-->
+    <!-- Conteúdo principal da página -->
+    <div class="main-content"> <!-- Divisão para o conteúdo principal da página -->
+        <h1>Horários dos Transportes Públicos</h1> <!-- Título do conteúdo principal -->
+        <table> <!-- Tabela para exibir os horários dos transportes -->
+            <thead>
+                <tr> <!-- Linha de cabeçalho da tabela -->
+                    <th>Tipo de Transporte</th> <!-- Cabeçalho para o tipo de transporte -->
+                    <th>Linha</th> <!-- Cabeçalho para a linha do transporte -->
+                    <th>Dias Úteis</th> <!-- Cabeçalho para horários em dias úteis -->
+                    <th>Sábados</th> <!-- Cabeçalho para horários aos sábados -->
+                    <th>Domingos e Feriados</th> <!-- Cabeçalho para horários aos domingos e feriados -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!-- Primeira linha de dados -->
+                    <td>Ônibus</td> <!-- Tipo de transporte: ônibus -->
+                    <td>Linha 101 - Centro/Estação Norte</td> <!-- Linha e percurso -->
+                    <td>5h00 - 23h00 (a cada 15 minutos), 23h15 - 0h00 (a cada 30 minutos)</td>
+                    <!-- Horários de dias úteis -->
+                    <td>6h00 - 22h00 (a cada 20 minutos), 22h15 - 0h00 (a cada 30 minutos)</td>
+                    <!-- Horários aos sábados -->
+                    <td>7h00 - 21h00 (a cada 30 minutos), 21h15 - 23h00 (a cada 45 minutos)</td>
+                    <!-- Horários aos domingos e feriados -->
+                </tr>
+                <tr> <!-- Segunda linha de dados -->
+                    <td>Metrô</td> <!-- Tipo de transporte: metrô -->
+                    <td>Linha Azul - Estação Central até Estação Sul</td> <!-- Linha e percurso -->
+                    <td>5h30 - 0h00 (a cada 10 minutos), 0h10 - 1h00 (a cada 20 minutos)</td>
+                    <!-- Horários de dias úteis -->
+                    <td>6h00 - 0h00 (a cada 15 minutos), 0h10 - 1h00 (a cada 30 minutos)</td>
+                    <!-- Horários aos sábados -->
+                    <td>7h00 - 23h00 (a cada 20 minutos), 23h10 - 0h00 (a cada 30 minutos)</td>
+                    <!-- Horários aos domingos e feriados -->
+                </tr>
+                <tr> <!-- Terceira linha de dados -->
+                    <td>BRT</td> <!-- Tipo de transporte: BRT -->
+                    <td>Linha Verde - Terminal Oeste até Terminal Leste</td> <!-- Linha e percurso -->
+                    <td>4h45 - 23h30 (a cada 15 minutos), 23h45 - 1h00 (a cada 30 minutos)</td>
+                    <!-- Horários de dias úteis -->
+                    <td>5h30 - 23h00 (a cada 20 minutos), 23h15 - 1h00 (a cada 30 minutos)</td>
+                    <!-- Horários aos sábados -->
+                    <td>6h00 - 22h00 (a cada 30 minutos), 22h15 - 23h30 (a cada 45 minutos)</td>
+                    <!-- Horários aos domingos e feriados -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Seção de Informações sobre Transporte Público -->
+    
+        <div class="info-section-container">
+            <div class="info-section">
+                <h2>Informações de Transporte Público</h2>
+                <p>Para se locomover pelo Distrito Federal, os moradores e visitantes contam com várias empresas de
+                    transporte público:</p>
+
+                <!-- Empresas de Ônibus -->
+                <div class="info-title">
+                    <h3>Empresas de Ônibus:</h3>
+                </div>
+                <div class="info-box">
+
+                    <div class="info-item">
+                        <a href="https://www.pioneiratransportes.com.br" target="_blank">
+                            <h4>Pioneira Transportes</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,00</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="http://www.viacaopiracicabana.com.br" target="_blank">
+                            <h4>Viação Piracicabana</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,50</p>
+                        <p>Bilhete Único: Não</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.viacaomarechal.com.br" target="_blank">
+                            <h4>Viação Marechal</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,20</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.saosejetransportes.com.br" target="_blank">
+                            <h4>São José Transporte e Turismo</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,30</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="http://www.avb.com.br" target="_blank">
+                            <h4>Auto Viação Brasília</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,00</p>
+                        <p>Bilhete Único: Não</p>
+                    </div>
+                </div>
+
+                <!-- Metrô -->
+                <div class="info-title">
+                    <h3>Metrô-DF:</h3>
+                </div>
+                <div class="info-box">
+
+                    <div class="info-item">
+                        <a href="https://www.metro.df.gov.br" target="_blank">
+                            <h4>Metrô-DF</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 3,00</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer-content"> <!-- Conteúdo do rodapé -->
+            <div class="footer-section"> <!-- Seção de links úteis no rodapé -->
+                <h4>Links Úteis</h4> <!-- Título da seção de links úteis -->
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página sobre -->
+                    <li><a href="servico.html">Serviços</a></li> <!-- Link para a página de serviços -->
+                    <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    <!-- Link para a página de política de privacidade -->
+                </ul>
+            </div>
+            <div class="footer-section"> <!-- Seção de contato no rodapé -->
+                <h4>Contato</h4> <!-- Título da seção de contato -->
+                <p>Email: contato@distritomobi.com</p> <!-- E-mail de contato -->
+                <p>Telefone: (61) 98997-5277</p> <!-- Telefone de contato -->
+                <p>Endereço: Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p> <!-- Endereço de contato -->
+            </div>
+        </div>
+        <div class="footer-bottom"> <!-- Parte inferior do rodapé -->
+            <p>&copy; 2024 Distrito Mobi. Todos os direitos reservados.</p> <!-- Copyright e ano -->
+        </div>
+    </footer>
+</body>
+
+</html>

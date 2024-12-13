@@ -1,0 +1,166 @@
+
+/* Seções de Conteúdo */
+
+.paragrafo {
+    padding: 20px;
+    max-width: 1350px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.paragrafo h1, .paragrafo h2 {
+    color: #444;
+}
+
+.paragrafo p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* tentativa de arrumar o texto e imagem*/
+.paragrafom {
+    padding: 20px;
+    max-width: 1350px; /* Largura máxima da seção */
+    margin: 20px auto;
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: flex; /* Define o layout flexível */
+    align-items: top; /* Alinha os itens verticalmente */
+}
+
+/* Estilo para o título (h1) e o parágrafo (p) */
+.paragrafom h1, .paragrafom p {
+    color: #444; /* Cor do título */
+    text-align: center;
+}
+
+/* Estilo para o parágrafo */
+.paragrafom p {
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-right: 3px; /* Adiciona 3px de distância do texto para a imagem */
+    text-align: justify;
+    padding: 20px 30px;
+}
+
+
+/* Estilo da imagem */
+.imagem {
+    width: 50%; /* A imagem ocupa 50% da largura da área disponível */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    border-radius: 20px; /* Bordas arredondadas na imagem */
+    padding: 15px; /* Adiciona um pouco de espaço à esquerda da imagem */
+}
+
+
+/*<!-------------------------------------------------------------------------->*/
+/* CONHEÇA A EQUIPE */
+/* ----------------------------------------------------------------------------------- */
+
+
+/* Estilo para o título da seção */
+.padrao {
+    text-align: center;
+    color: #444;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 1350px; /* Ajuste para ocupar toda a largura da tela */
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adiciona sombra para efeito de profundidade */
+}
+
+/* Estilo para as colunas de equipe */
+.column {
+    float: left;
+    width: 23%; 
+    margin-bottom: 16px; /* Adiciona um espaçamento entre as colunas */
+    padding: 0 8px;
+    box-sizing: border-box; /* Para que o padding não afete o tamanho total da coluna */
+}
+
+/* Responsividade: Exibe as colunas uma abaixo da outra em telas pequenas */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%; /* Colunas empilham em telas pequenas */
+        display: block;
+    }
+}
+
+/* Estilo para o cartão de cada membro da equipe */
+.card {
+    background-color: #fff;
+    border-radius: 10px; /* Arredonda os cantos dos cartões */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adiciona sombra para efeito de profundidade */
+    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas do cartão */
+    transition: all 0.3s ease; /* Transição suave */
+}
+.card:hover {
+    transform: translateY(
+        -10px
+      ); /* Efeito de elevar a caixinha ao passar o mouse */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+/* Estilo para o contêiner de informações de cada membro da equipe */
+.container_equipe {
+    padding: 10px 12px;
+    text-align: center;
+    border-radius: 5px;
+    color: #444;
+}
+
+
+/* Limpeza de floats para a estrutura de layout */
+.container_equipe, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row {
+    max-width: 1350px;
+    margin-left: auto;
+}
+
+/* Estilo para a imagem do membro da equipe */
+
+.imagem_equipe {
+    width: 90%; /* A imagem ocupará toda a largura do cartão */
+    /*height: 250px;  Altura fixa */
+    margin-left: 12px;
+    margin-top: 12px;
+    display: block; /* Garante que a imagem seja tratada como bloco */
+}
+
+/* Estilo para o título do membro da equipe */
+.title {
+    color: grey;
+}
+
+/* Estilo do botão */
+.button {
+    display: inline-block;
+    width: 90%;
+    padding: 12px;
+    font-size: 1em;
+    color: white;
+    background-color: #61a6ab;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    outline: 0;
+}
+
+.button:hover {
+    background-color: #605951;
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444;
+}

@@ -1,0 +1,36 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif; /* Define a fonte para todo o corpo */
+    background-color: #c0e2d4; /* Cor de fundo da página */
+    padding: 0; /* Remove o padding da página */
+    color: #444;
+  }
+
+  .noticia-imagem {
+    width: 12%;
+    height: auto;
+    display: block;
+}
+.noticias{
+  padding: 20px;
+  max-width: 1350px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-noticia {
+    font-size: 0.9rem;
+    color: #777;
+}
+.leia-mais {
+  display: inline-block;
+  margin-top: 10px;
+  color: #61a6ab;
+  text-decoration: none;
+}
+
+.leia-mais:hover {
+  text-decoration: underline;
+  color: #605951;
+}

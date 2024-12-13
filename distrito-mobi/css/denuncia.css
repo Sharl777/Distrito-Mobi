@@ -1,0 +1,173 @@
+.container img {
+  max-width: 80%;
+  display: block;
+  padding: none; /* "none" não é um valor válido para padding */
+  align-items: center; /* Não é aplicável diretamente em imagens */
+  border-radius: 5px;
+  margin: auto; /* Centraliza horizontalmente */
+  justify-content: center; /* Não é aplicável diretamente em imagens */
+  margin-bottom: 10px;
+}
+.div3 {
+  background-color: rgb(218, 194, 194);
+  clear: both; /* Garante que o elemento não se sobreponha a elementos flutuantes */
+}
+.denuncia {
+  margin: 20px auto;
+  max-width: 1350px;
+  background: #fff;
+  padding: 10px; /* O valor para padding-top deve ser único */
+  text-align: center;
+  font-weight: 200; /* Valores comuns são: normal, bold ou números de 100 a 900 */
+  border: 10px; /* Para aplicar uma borda visível, o estilo precisa ser especificado */
+  border-radius: 10px;
+  text-decoration: double; /* Funciona em texto, mas pode não ser a melhor escolha */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+fieldset {
+  border: 1px solid #ddd; /* Borda sutil ao redor do formulário */
+  border-radius: 10px; /* Bordas arredondadas do fieldset */
+  padding: 20px;
+  margin: 20px;
+}
+legend {
+  font-size: 1.5em;
+  color: #444;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+#inputt {
+  /* Define o elemento como um container flexbox, permitindo um layout flexível */
+  display: flex;
+
+  /* Define o eixo principal do container flex como linha, alinhando os itens horizontalmente */
+  flex-direction: row;
+
+  /* Alinha os itens verticalmente ao centro do container */
+  align-items: baseline;
+
+  /* Adiciona uma borda sólida de 1px com a cor cinza claro */
+  border: 1px solid #ccc;
+
+  /* Arredonda os cantos do container com um raio de 5px */
+  border-radius: 5px;
+
+  /* Adiciona um padding de 10px ao redor do conteúdo do container */
+  padding: 30px;
+}
+
+.labell {
+  /* Adiciona uma margem direita de 10px ao rótulo */
+  margin-right: 10px;
+
+  /* Define o peso da fonte como negrito, tornando o texto do rótulo mais destacado */
+  font-weight: bold;
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444;
+}
+
+#search {
+  /* Torna o campo de entrada flexível, ocupando o espaço disponível */
+  flex: 1;
+
+  /* Remove a borda padrão do campo de entrada */
+  border: none;
+
+  /* Remove o contorno que aparece quando o campo de entrada está focado */
+  outline: none;
+
+  /* Adiciona um padding interno de 5px ao campo de entrada */
+  padding: 5px;
+
+  /* Define o tamanho da fonte do texto do campo de entrada como 16px */
+  font-size: 16px;
+}
+
+button[data-testid="btn-search"] {
+  display: inline-block; /* Exibe o botão como um bloco em linha, permitindo que ele seja exibido ao lado de outros elementos,
+   mas com as características de um bloco. */
+  font-size: 1em;
+  color: white; /* Define a cor do texto dentro do botão como branca. */
+  background-color: #61a6ab; /* Cor de fundo do botão */
+  border: none; /* Remove a borda padrão do botão. */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  text-align: center; /* Alinha o texto do botão ao centro. */
+  cursor: pointer; /* Define o cursor como uma mão ao passar sobre o botão, indicando que ele é clicável. */
+  font-weight: bold;
+  outline: 0; /* Remove o contorno (normalmente exibido ao focar o botão). */
+}
+
+button[data-testid="btn-search"]:hover {
+  background-color: #605951; /* Cor de fundo ao passar o mouse */
+}
+
+.msg {
+  width: 100%; /* Largura total dos campos de entrada */
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Bordas arredondadas dos campos */
+  box-sizing: border-box;
+  font-size: 1em;
+  color: #666;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa; /* Cor do placeholder */
+}
+
+.msg:focus {
+  outline: none;
+  border-color: #605951; /*Cor da borda ao focar */
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.2); /* Sombra ao focar */
+}
+.button_submit {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  color: #fff; /* Cor do texto */
+  background-color: #61a6ab; /* Cor de fundo do botão */
+  border: none;
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button_submit:hover {
+  background-color: #605951; /* Cor de fundo ao passar o mouse */
+}
+
+/* button[data-testid="btn-search"] {
+  /* Define a cor de fundo do botão como um azul claro */
+/* background-color: #6eb0f5; */
+
+/* Define a cor do texto do botão como branco */
+/* color: #fff;
+
+  /* Remove a borda padrão do botão */
+/* border: none; */
+
+/* Arredonda os cantos do botão com um raio de 5px */
+/* border-radius: 75px; */
+
+/* Adiciona um padding de 10px para cima e para baixo, e 20px para esquerda e direita */
+/* padding: 10px 20px; */
+
+/* Define o cursor do mouse como um ponteiro quando o usuário passa o mouse sobre o botão */
+/* cursor: pointer; */
+
+/* Adiciona um efeito de transição suave à cor de fundo do botão quando o usuário passa o mouse sobre ele */
+/* transition: background-color 0.3s ease; */
+/* } */
+
+/* button[data-testid="btn-search"]:hover { */
+/* Altera a cor de fundo do botão para um azul mais escuro quando o usuário passa o mouse sobre ele */
+/* background-color: #b8d0ea; */
+/* } */

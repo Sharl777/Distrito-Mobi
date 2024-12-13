@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito Mobi</title>
+    <link rel="stylesheet" href="css/Index.css">
+    <link rel="stylesheet" href="css/denuncia.css">
+    <!-- logo do site na barra da guia ou barra url -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/bus.ico.png">
+</head>
+
+<body>
+
+    <!-- logo e imagem do topo da pagina -->
+    <div class="header">
+        <h1 class="nomesite"> Distrito Mobi</h1>
+        <img src="img/logo.png" alt="logo a direita">
+    </div>
+
+    <!-- Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="horario.html">Horários</a></li>
+            <li><a href="guia.html">Guia da Cidade</a></li>
+            <li><a href="noticia.html">Notícias</a></li>
+            <li><a href="denuncia.html">Denúncias</a></li>
+            <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página de informações sobre o site -->
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <img src="./img/denuncia.png">
+    </div>
+
+    <!-- Início do container principal da seção de denúncia -->
+    <div class="denuncia">
+        <fieldset>
+            <!-- Título explicativo para o usuário entender o objetivo do campo -->
+            <legend>Ajude-nos a melhorar o transporte!<br> Informe o nome da empresa envolvida na sua denúncia.</legend>
+
+            <!-- Container para o campo de entrada -->
+            <div>
+
+
+                <!-- Container específico para organizar o label, input e botão de busca -->
+                <div id="inputt">
+
+                    <!-- Rótulo para o campo de entrada, pedindo o nome da empresa -->
+                    <label class="labell">Qual o nome da empresa?</label>
+
+                    <!-- Campo de entrada onde o usuário digita o nome da empresa -->
+                    <input id="search" placeholder="Digite aqui nome da empresa" value="">
+
+                    <!-- Botão para realizar a busca -->
+                    <button data-testid="btn-search" type="primary">
+
+                        <!-- Ícone de lupa dentro do botão de busca -->
+                        <p>Pesquisar: &#128269;</p>
+
+                    </button>
+
+                </div> <!-- Fim do bloco de entrada e botão de busca -->
+                <div>
+                    <label class="labell" for="mensagem">Digite sua denuncia:</label>
+                    <textarea id="texto:" class="msg" cols="50" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+
+            </div> <!-- Fim do container do campo de entrada -->
+            <input class="button_submit" type="submit" value="Enviar">
+        </fieldset>
+    </div> <!-- Fim do container principal da seção de denúncia -->
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <!-- Seção do rodapé com links úteis para navegação -->
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <!-- Seção do rodapé com informações de contato -->
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@distritomobi.com</p>
+                <p>Telefone: (61) 98997-5277</p>
+                <p>Endereço: Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+        </div>
+        <!-- Parte inferior do rodapé com direitos autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Distrito Mobi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>

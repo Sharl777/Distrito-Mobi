@@ -1,0 +1,297 @@
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  /* display: contents; */
+  background-color: #c0e2d4;
+}
+
+.menu {
+  display: flex ;
+  justify-content:space-around ;
+  background: #ffff ;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px
+}
+
+.menu li {
+  padding: 0 20px;
+
+}
+
+.menu a {
+  font-size: 20px;
+  color: #605951;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+/*atribuiçoes ao passar a seta em cima do texto*/
+.menu a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* atribução para o link que já foi visitado*/
+.menu a:visited {
+  color: #a87b20;
+}
+
+
+.imge {
+  display:block ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; /* Ajuste o valor conforme necessário */
+  height:auto ; /* Mantém a proporção da imagem */
+  border: 2px solid hsl(0, 4%, 67%); /* Adiciona uma borda à imagem */
+  border-radius: 10px; /* Adiciona cantos arredondados */
+} 
+
+
+.noticias {
+  flex: 1 1 calc(33.333% - 20px); 
+  background: #fff; 
+  padding: 20px; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*linhas 49 e 48 fazem a sombra nas bordas*/
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* atribuições do titulo e logo*/
+.header {
+  background-color: #61a6ab;
+  color: white;
+  padding: 0px;
+  text-align: right;
+  /* position: relative; */
+  height: 100px;
+}
+
+.header img {
+  width: 135px;
+ 
+}
+/* atribuições para colocar o nome do site sobrepondo o linha da logo*/
+.nomesite {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  margin-left: 35px;
+  color: rgb(0, 0, 0);
+  font-size: 50px; 
+  font-weight: bold; 
+}
+  
+/* Container do carrossel */
+.carrosel {
+  position: relative;
+  width: 100%; 
+  max-width: 550%;
+  height: 400px; 
+  overflow: hidden; 
+  margin: 0 auto;
+  
+}
+
+/* Estilo para as imagens do carrossel */
+.carrosel img {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  opacity: 0; /* Torna a imagem invisível por padrão */
+  transition: opacity 0.5s ease-in-out; /* Animação suave para a transição de opacidade */
+  border-radius: 2%; /*adicionei uma borda mais arredondada.*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* linhas 115 e 116 estão fazendo uma breve sombra para haver um contraste do fundo */
+  border: 1px solid #ddd; 
+}
+
+
+ /* Estilo para a imagem ativa */
+.carrosel img.active {
+  opacity: 1; 
+}
+
+
+/* Estilo para os botões de navegação */
+.arrow {
+  position: absolute; /* Posição absoluta para posicionar sobre as imagens */
+  top: 50%; 
+  transform: translateY(-50%); 
+  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  color: white; 
+  padding: 1rem 0.8rem; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 24px; 
+  z-index: 100; /* Define a ordem de empilhamento */
+  transition: background 0.3s ease; 
+}
+
+/* Estilo ao passar o mouse nos botões */
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8); 
+}
+
+/* Estilo para o botão de voltar */
+.prev {
+  left: 0; 
+  border-radius: 0 3px 3px 0; 
+}
+
+/* Estilo para o botão de avançar */
+.next {
+  right: 0; 
+  border-radius: 3px 0 0 3px; 
+}
+
+/* Estilo para o container geral */
+.container {
+  position: relative; 
+  width: 100%; 
+  max-width: 866px; 
+  margin: 0 auto; 
+  margin-top: 30px;
+}
+
+/* Estilo para o container geral */
+.container {
+  position: relative; 
+  width: 100%; 
+  max-width: 866px; 
+  margin: 0 auto; 
+  margin-top: 30px;
+  
+}
+
+/* Estilo do container principal */
+.container_clima {
+  display: flex; /* Organiza o conteúdo horizontalmente */
+  justify-content: space-between; /* Espaçamento entre as colunas */
+  gap: 20px; /* Espaçamento entre as colunas */
+  height: 100%;
+  margin: 40px; /* Margem externa em volta do contêiner */
+  margin-top: 30px;
+}
+
+/* Coluna horizontal com 3 seções */
+.coluna_horizontal {
+  display: flex;
+  flex-direction: column; /* Coloca os artigos em coluna */
+  gap: 20px; /* Espaço entre as notícias */
+  flex: 2; /* Ocupa mais espaço que a coluna vertical do clima*/
+}
+
+/* Estilo de cada notícia */
+.noticia_index {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #444;
+  flex: 1 1 calc(33.333% - 20px); 
+  background: #fff; 
+  padding: 20px; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*linhas 49 e 48 fazem a sombra nas bordas*/
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Coluna vertical para o clima */
+.clima_vertical {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #444;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  gap: 20px; /* Espaço  */
+  width: 100%; /* ocupar toda a largura do contêiner */
+  height: auto; /* Ajuste de altura conforme o conteúdo */
+  max-width: 160px; /* Limita a largura do iframe para se alinhar ao contêiner */
+  max-height: auto; /* se adapta de acordo com conteúdo*/
+}
+
+
+/* Estilização geral do rodapé */
+.footer {
+  background-color: #7eccd1; 
+  color: #1e1b17; 
+  padding: 1px;
+  margin-top: 50px; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Conteúdo do rodapé, organizado de forma flexível */
+.footer-content {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+/* Estilização para cada seção individual do rodapé */
+.footer-section {
+  flex: 1; 
+  min-width: 250px; 
+  margin: 20px; 
+}
+
+/* Estilização dos títulos das seções */
+.footer-section h4 {
+  color: #1e1b17; 
+  font-size: 18px;
+  margin-bottom: 20px; 
+  font-weight: bold; 
+}
+
+/* Estilização da lista de links úteis */
+.footer-section ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.footer-section ul li {
+  margin-bottom: 10px; 
+}
+
+.footer-section ul li a {
+  color: #1e1b17; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline; 
+}
+
+/* Estilização do texto de contato */
+.footer-section p {
+  line-height: 1.6; 
+  margin-bottom: 10px; 
+}
+
+/* Estilização da parte inferior do rodapé */
+.footer-bottom {
+  text-align: center; 
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha superior com opacidade */
+}
+
+.footer-bottom p {
+  font-size: 14px; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-section {
+      flex: 100%; 
+      text-align: center; 
+  }
+  
+  .footer-content {
+      flex-direction: column; 
+  }
+}

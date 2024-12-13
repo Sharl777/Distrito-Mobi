@@ -1,0 +1,145 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif; /* Define a fonte para todo o corpo */
+    background-color: #c0e2d4; /* Cor de fundo da página */
+    padding: 0; /* Remove o padding da página */
+  }
+/* Define a área de conteúdo principal */
+.main-content {
+  padding: 20px; /* Adiciona um preenchimento interno de 20px em todos os lados do conteúdo */
+  max-width: 1350px; /* Define a largura máxima do conteúdo em 1200px */
+  margin: 20px auto; /* Centraliza o conteúdo horizontalmente e adiciona uma margem de 10px no topo e na base */
+  text-align: center; /* Centraliza o texto dentro da área de conteúdo principal */
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444;
+}
+/* Estiliza a tabela */
+table {
+  width: 100%; /* Define a largura da tabela para ocupar 100% do espaço do container */
+  border-collapse: collapse; /* Remove os espaços entre as bordas das células, colapsando-as */
+  margin: 20px 0; /* Adiciona uma margem de 20px no topo e na base da tabela */
+}
+
+/* Estiliza as células da tabela (cabeçalhos e dados) */
+th,
+td {
+  border: 2px solid; /* Define uma borda de 2px em torno de cada célula */
+  padding: 20px; /* Adiciona um preenchimento interno de 20px dentro de cada célula */
+  text-align: center; /* Alinha o conteúdo da célula à esquerda */
+}
+
+/* Estiliza as células de cabeçalho */
+th {
+  background-color: #61a6ab; /* Define a cor de fundo dos cabeçalhos como um tom de azul */
+  color: #edebe8; /* Define a cor do texto dos cabeçalhos como um tom de marrom */
+}
+
+/* Define a cor de fundo para linhas pares da tabela */
+tr {
+  background-color: #f2f2f2; /* Adiciona uma cor de fundo cinza claro às linhas pares da tabela */
+}
+
+/* Define a cor de fundo ao passar o mouse sobre uma linha da tabela */
+tr:hover {
+  background-color: #ddd; /* Muda a cor de fundo para cinza claro ao passar o mouse sobre uma linha */
+}
+
+/* Container geral que envolve o conteúdo(copia) */
+.containergoogle {
+    max-width: 1350px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    width: 100%; /* O container pode ocupar 100% da largura da tela */
+    padding: 0px; /* Espaçamento interno */
+    background-color: #fff;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do container */
+  }
+
+/* Bloco para as informações sobre transporte público */
+.info-section-container {
+  background-color: #fff; /* Cor de fundo para a seção de informações */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-top: 20px; /* Espaçamento superior */
+  margin: 20px;
+}
+
+/* Estilos para a seção de informações sobre transporte público */
+.info-section {
+  width: 100%; /* Ocupa toda a largura do container */
+  padding: 0px; /* Espaçamento interno */
+  background-color: #fff; /* Cor de fundo */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin: 20px;
+}
+.info-section h2 {
+  color: #444;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.info-section p {
+  color: #666;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Estilo da caixa de informações */
+.info-box {
+  display: flex;
+  flex-direction: row; /* Organiza as caixinhas em coluna */
+  gap: 15px; /* Espaçamento entre as caixinhas */
+  margin-top: 20px; /* Espaço entre a seção de informações e o mapa */
+  flex-wrap: wrap; /* Permite que as caixinhas se ajustem em várias linhas se necessário */
+}
+.info-title h3 {
+  /*atribuições para os titulos h3*/
+  color: #444;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Estilo de cada item de informação (empresa de transporte) */
+.info-item {
+  cursor: pointer;
+  background-color: #f7f7f7; /* Fundo branco para as caixinhas */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  width: calc(33.33% - 10px); /* Três itens por linha, com margem entre eles */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Centraliza o texto */
+  width: calc(33.33% - 10px); /* Cada caixinha ocupa 1/3 do espaço disponível */
+  min-width: 250px; /* Define a largura mínima da caixinha */
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+.info-item:hover {
+  transform: translateY(
+    -5px
+  ); /* Efeito de elevar a caixinha ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+/* Estilo dos títulos das empresas */
+.info-item h4 {
+  font-size: 1.4em; /* Tamanho maior para o nome da empresa */
+  color: #444; /* Cor do título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo dos links das empresas */
+.info-item a {
+  color: #61a6ab; /* Cor azul para os links */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Deixa o texto mais grosso */
+  display: block; /* Faz com que o link ocupe a linha inteira */
+  margin-top: 10px; /* Espaço acima do link */
+}
+
+.info-item a:hover {
+  color: #605951; /* Cor do link quando passar o mouse */
+}
+
+/* Estilo para as descrições dentro das caixinhas */
+.info-item p {
+  font-size: 1em; /* Tamanho da fonte para a descrição */
+  color: #444; /* Cor do texto */
+  margin: 5px 0; /* Espaçamento entre parágrafos */
+}

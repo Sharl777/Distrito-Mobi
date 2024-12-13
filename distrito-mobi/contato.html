@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito Mobi</title>
+    <link rel="stylesheet" href="css/Index.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <!-- logo do site na barra da guia ou barra url -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/bus.ico.png">
+</head>
+
+<body>
+
+    <!-- logo e imagem do topo da pagina -->
+    <div class="header">
+        <h1 class="nomesite"> Distrito Mobi</h1>
+        <img src="img/logo.png" alt="logo a direita">
+    </div>
+
+    <!-- Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="horario.html">Horários</a></li>
+            <li><a href="guia.html">Guia da Cidade</a></li>
+            <li><a href="noticia.html">Notícias</a></li>
+            <li><a href="denuncia.html">Denúncias</a></li>
+            <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página de informações sobre o site -->
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <!-- Forms para o contato -->
+
+    </nav>
+    <h1 class="ouvi">OUVIDORIA GERAL DA DISTRITO MOBI: <br> <span>&#9742;</span> <!-- Simbolo de telefone com Unicode -->
+    168</h1>
+<!-- FORMULÁRIO-->
+<div class="formulario">
+    <form id="formulario" autocomplete="off">
+        <fieldset>
+            <legend>Formulário</legend>
+            
+            <label for="nome">Nome:</label>
+            <input id="nome" class="campo_nome" type="text" placeholder="Digite seu nome">
+            
+            <label for="email">Email:</label>
+            <input id="email" class="campo_email" type="email" placeholder="Digite seu email">
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" class="msg" cols="50" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            
+            <input class="button_submit" type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</div>
+
+    <br>
+    <!-- bloco de anotaçoes -->
+    <div class="contato_info">
+        <article>
+            <h2>Mais Informações... </h2>
+            <p>Precisa de mais informações? Entre em contato com nosso SAC pelos canais abaixo e tire todas as suas
+                dúvidas!</p>
+        </article>
+    </div>
+
+    <br>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <!-- Seção do rodapé com links úteis para navegação -->
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <!-- Seção do rodapé com informações de contato -->
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@distritomobi.com</p>
+                <p>Telefone: (61) 98997-5277</p>
+                <p>Endereço: Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+        </div>
+        <!-- Parte inferior do rodapé com direitos autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Distrito Mobi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>

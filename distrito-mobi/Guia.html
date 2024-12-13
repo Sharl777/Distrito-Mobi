@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito Mobi</title>
+    <link rel="stylesheet" href="css/Index.css">
+    <link rel="stylesheet" href="css/guia.css">
+    <!-- logo do site na barra da guia ou barra url -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/bus.ico.png">
+</head>
+
+<body>
+
+    <!-- logo e imagem do topo da pagina -->
+    <div class="header">
+        <h1 class="nomesite"> Distrito Mobi</h1>
+        <img src="img/logo.png" alt="logo a direita">
+    </div>
+
+    <!-- Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="horario.html">Horários</a></li>
+            <li><a href="guia.html">Guia da Cidade</a></li>
+            <li><a href="noticia.html">Notícias</a></li>
+            <li><a href="denuncia.html">Denúncias</a></li>
+            <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página de informações sobre o site -->
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <br>
+
+    <div class="containergoogle">
+        <h1>Guia da Cidade</h1>
+
+        <!-- Bloco de Mapa e Barra de Pesquisa -->
+        <div class="map-and-search-container">
+            <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <input type="text" id="location-input" class="search-input" placeholder="Digite a localização...">
+                <button onclick="updateMap()" class="search-button">Buscar</button>
+            </div>
+
+            <!-- Mapa do Google com iframe -->
+            <div class="map-container">
+                <iframe id="map-frame"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBaCv3RLtpShtTaaORdkHDJZLDU5M6s_Qk&q=Brasília,DF,Brazil"
+                    width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
+                </iframe>
+            </div>
+
+
+        </div>
+
+        <!-- Seção de Informações sobre Transporte Público -->
+        <div class="info-section-container">
+            <div class="info-section">
+                <h2>Informações de Transporte Público</h2>
+                <p>Para se locomover pelo Distrito Federal, os moradores e visitantes contam com várias empresas de
+                    transporte público:</p>
+
+                <!-- Empresas de Ônibus -->
+                <div class="info-title">
+                    <h3>Empresas de Ônibus:</h3>
+                </div>
+                <div class="info-box">
+
+                    <div class="info-item">
+                        <a href="https://www.pioneiratransportes.com.br" target="_blank">
+                            <h4>Pioneira Transportes</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,00</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="http://www.viacaopiracicabana.com.br" target="_blank">
+                            <h4>Viação Piracicabana</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,50</p>
+                        <p>Bilhete Único: Não</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.viacaomarechal.com.br" target="_blank">
+                            <h4>Viação Marechal</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,20</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.saosejetransportes.com.br" target="_blank">
+                            <h4>São José Transporte e Turismo</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,30</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                    <div class="info-item">
+                        <a href="http://www.avb.com.br" target="_blank">
+                            <h4>Auto Viação Brasília</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 4,00</p>
+                        <p>Bilhete Único: Não</p>
+                    </div>
+                </div>
+
+                <!-- Metrô -->
+                <div class="info-title">
+                    <h3>Metrô-DF:</h3>
+                </div>
+                <div class="info-box">
+
+                    <div class="info-item">
+                        <a href="https://www.metro.df.gov.br" target="_blank">
+                            <h4>Metrô-DF</h4>
+                        </a>
+                        <p>Média de tarifa: R$ 3,00</p>
+                        <p>Bilhete Único: Sim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para atualizar o mapa de acordo com o valor da busca
+        function updateMap() {
+            const location = document.getElementById('location-input').value;
+            const mapFrame = document.getElementById('map-frame');
+            if (location) {
+                mapFrame.src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBaCv3RLtpShtTaaORdkHDJZLDU5M6s_Qk&q=${encodeURIComponent(location)}`;
+            }
+        }
+    </script>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <!-- Seção do rodapé com links úteis para navegação -->
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <!-- Seção do rodapé com informações de contato -->
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@distritomobi.com</p>
+                <p>Telefone: (61) 98997-5277</p>
+                <p>Endereço: Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Parte inferior do rodapé com direitos autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Distrito Mobi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
